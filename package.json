@@ -1,23 +1,53 @@
 {
-  "name": "chess.com",
-  "version": "1.0.0",
+  "name": "Chess.com",
+  "version": "1.0.5",
   "description": "Unoffical Chess.com Desktop App",
-  "repository": {
-    "url": "https://github.com/alikaratel/chess.com-desktop"
-  },
-  
-  "author": {
-    "name": "github/alikaratel"
-  },
-
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder"
+    "pack": "electron-builder --dir",
+    "build": "electron-builder",
+    "dist:win": "electron-builder --platform win32 --x64",
+    "dist:linux": "electron-builder -l",
+    "dev": "electron . --dev"
   },
-
+  "files": [
+    "./icon.png",
+    "./img/chesscom_logo.png",
+    "./img/chesscom_logosplash.png",
+    "*.*",
+    "**/*",
+    "build/icon.*"
+  ],
+  "author": "github.com/alikaratel",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "^24.3.0",
+    "electron-builder": "^23.6.0",
+    "electron-packager": "^17.1.1",
+    "electron-wix-msi": "^5.0.0"
+  },
+  "contributors": [
+    "Ali Karatel"
+  ],
+  "dependencies": {
+    "discord-rich-presence": "0.0.8",
+    "discord-rpc": "^4.0.1",
+    "dom-to-image": "^2.6.0",
+    "electron-preferences": "^2.8.2",
+    "electron-store": "^8.1.0",
+    "needle": "^3.2.0",
+    "path": "^0.12.7",
+    "v8-compile-cache": "^2.3.0",
+    "ws": "^8.13.0"
+  },
   "build": {
-    "buildVersion": "1000",
+    "buildVersion": "1.0.5",
     "appId": "chess.com-desktop",
     "compression": "normal",
     "asar": true,
@@ -27,27 +57,26 @@
       ],
       "icon": "img/icon.ico"
     },
-
     "nsis": {
       "oneClick": true,
-      "installerIcon": "img/icon.ico",
-      "uninstallerIcon": "img/icon.ico",
-      "uninstallDisplayName": "Chess.Com",
       "license": "LICENSE",
-      "allowToChangeInstallationDirectory": false,
+      "perMachine": "false",
       "runAfterFinish": false,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Chess.com Desktop",
       "displayLanguageSelector": true,
-      "installerLanguages": ["en_US","de_DE","ru_RU","fr_FR","tr_TR"]
+      "installerIcon": "img/icon.ico",
+      "uninstallerIcon": "img/icon.ico",
+      "shortcutName": "Chess.com Desktop",
+      "allowToChangeInstallationDirectory": false,
+      "uninstallDisplayName": "Chess.com Uninstaller",
+      "installerLanguages": [
+        "en_US",
+        "de_DE",
+        "ru_RU",
+        "fr_FR",
+        "tr_TR"
+      ]
     }
-  },
-
-  "license": "MIT",
-  "devDependencies": {
-    "electron": "^24.1.2",
-    "electron-builder": "^23.6.0",
-    "v8-compile-cache": "^2.3.0"
   }
 }
