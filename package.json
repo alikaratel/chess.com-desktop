@@ -1,0 +1,53 @@
+{
+  "name": "chess.com",
+  "version": "1.0.0",
+  "description": "Unoffical Chess.com Desktop App",
+  "repository": {
+    "url": "https://github.com/alikaratel/chess.com-desktop"
+  },
+  
+  "author": {
+    "name": "github/alikaratel"
+  },
+
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+
+  "build": {
+    "buildVersion": "1000",
+    "appId": "chess.com-desktop",
+    "compression": "normal",
+    "asar": true,
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "img/icon.ico"
+    },
+
+    "nsis": {
+      "oneClick": true,
+      "installerIcon": "img/icon.ico",
+      "uninstallerIcon": "img/icon.ico",
+      "uninstallDisplayName": "Chess.Com",
+      "license": "license.md",
+      "allowToChangeInstallationDirectory": false,
+      "runAfterFinish": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Chess.com Desktop",
+      "displayLanguageSelector": true,
+      "installerLanguages": ["en_US","de_DE","ru_RU","fr_FR","tr_TR"]
+    }
+  },
+
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^24.1.2",
+    "electron-builder": "^23.6.0",
+    "v8-compile-cache": "^2.3.0"
+  }
+}
