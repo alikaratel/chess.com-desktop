@@ -33,7 +33,7 @@
       "installerIcon": "img/icon.ico",
       "uninstallerIcon": "img/icon.ico",
       "uninstallDisplayName": "Chess.Com",
-      "license": "license.md",
+      "license": "LICENSE",
       "allowToChangeInstallationDirectory": false,
       "runAfterFinish": false,
       "createDesktopShortcut": true,
