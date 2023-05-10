@@ -2,6 +2,9 @@
 
 ![screenshot](img/simple.gif)
 
+![Simple DiscordRPC](img/simple-playing.png) ![Simple DiscordRPC](img/simple-learning.png) ![Simple DiscordRPC](img/simple-explorer.png) and more.
+
+
 Chess.com Desktop is a hobby desktop app written in Electron.js by [Ali Karatel](https://alikaratel.com.tr).
 
 ## Features
