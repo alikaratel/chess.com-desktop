@@ -28,7 +28,7 @@ Clone the repo:
 
 Install the required tools with `npm install` or the following commands:
 
-    $ npm i electron electron-builder v8-compile-cache
+    $ npm i
 
 ## Usage
 
