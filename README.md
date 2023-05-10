@@ -34,7 +34,7 @@ Run project without compile:
 
 Build the project for Windows:
 
-    $ npm build
+    $ npm run build
 
 ## License
 
