@@ -1,6 +1,6 @@
 # Chess.com Desktop: Unofficial Open Source Chess.com Desktop App by Fan Made ♟
 
-![screenshot](img/simple.png)
+![screenshot](img/simple.gif)
 
 Chess.com Desktop is a hobby desktop app written in Electron.js by [Ali Karatel](https://alikaratel.com.tr).
 
