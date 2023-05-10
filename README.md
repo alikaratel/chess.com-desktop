@@ -14,7 +14,7 @@ Chess.com Desktop is a hobby desktop app written in Electron.js by [Ali Karatel]
 - [X] Windwos Version&Installer
 - [ ] Lınux Version&Installer
 - [ ] MacOS Version&Installer
-
+- [ ] Discord Rich Presence
 ## Setup
 
 Clone the repo:
