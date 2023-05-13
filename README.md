@@ -10,10 +10,11 @@ Chess.com Desktop is a hobby desktop app written in Electron.js by [Ali Karatel]
 ## Features
 
 - [X] Electron.js (using [electron](https://github.com/electron/electron))
-- [X] Splash Screen
+- [X] Preferences (using [electron-preferences](https://github.com/snapcrunch/electron-preferences))
 - [X] Ultimate Performance (using [v8-compile-cache](https://github.com/zertosh/v8-compile-cache))
 - [X] Chess.com Brands (using [Chess.com Brand Resources](https://www.chess.com/article/view/chess-com-brand-resources))
 - [X] Discord Rich Presence (using [discord-rich-presence](https://github.com/devsnek/discord-rich-presence))
+- [X] Splash Screen
 - [X] Board Popup
 - [X] CPU Friendly Board Notifications
 - [X] Web Security
